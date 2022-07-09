@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using  CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form name ="calc" action="#">
+        <div class="grid-container">
+            <input type="text" id="display" class="Display" readonly>
+            <input type="button" value="1" class="Numbers" onclick="calc.display.value+='1'">
+            <input type="button" value="2" class="Numbers" onclick="calc.display.value+='2'">
+            <input type="button" value="3" class="Numbers" onclick="calc.display.value+='3'">
+            <input type="button" value="+" class="Operator" onclick="calc.display.value+='+'">
+            <input type="button" value="4" class="Numbers" onclick="calc.display.value+='4'">
+            <input type="button" value="5" class="Numbers" onclick="calc.display.value+='5'">
+            <input type="button" value="6" class="Numbers" onclick="calc.display.value+='6'">
+            <input type="button" value="-" class="Operator" onclick="calc.display.value+='-'">
+            <input type="button" value="7" class="Numbers" onclick="calc.display.value+='7'"> 
+            <input type="button" value="8" class="Numbers" onclick="calc.display.value+='8'">
+            <input type="button" value="9" class="Numbers" onclick="calc.display.value+='9'">
+            <input type="button" value="*" class="Operator" onclick="calc.display.value+='*'">
+            <input type="button" value="/" class="Operator" onclick="calc.display.value+='/'">
+            <input type="button" value="0" class="Numbers" onclick="calc.display.value+='0'">
+            <input type="button" value="=" class="Operator" onclick="calc.display.value=eval(calc.display.value)">
+            <input type="button" value="." class="Numbers" onclick="calc.display.value+='.'">            
+            <input type="button" value="BACKSPACE" class="Operator Back" onclick="calc.display.value=calc.display.value.substring(0,calc.display.value.length-1)">
+            <input type="button" value="CLEAR" class="Operator Clear" onclick="calc.display.value=''">
+           
+        </div>
+    </form>
+</body>
+</html>

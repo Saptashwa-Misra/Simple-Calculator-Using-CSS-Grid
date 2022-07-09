@@ -1,0 +1,72 @@
+*{
+    font-size: 30px;
+}
+
+body{
+    padding: 50px;
+}
+
+.grid-container{
+    background-color: rgb(119,215,244);
+    box-shadow: 5px 5px black;
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 35px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 2em;
+    width: 310px;
+}
+
+.Display{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 45px;
+    border-radius: 20px;
+    color: blue;
+}
+
+.Back{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 20px;
+}
+
+.Clear{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 20px;
+}
+
+.Numbers{
+    background-color: aqua;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+.Numbers:hover{
+    background-color: #ff0000; /* Green */
+    color: white;
+}
+
+.Operator{
+    background-color: #4c0ff4; /* Green */
+    color: white;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+.Operator:hover{
+    background-color: rgb(252, 244, 7);
+    color: black;
+}
+
+h1{
+    margin:auto;
+    text-align: center;
+    font-size: 2em;
+}
